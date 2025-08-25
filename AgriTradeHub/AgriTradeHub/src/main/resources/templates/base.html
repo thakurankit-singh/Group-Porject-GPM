@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th:fragment="layout(content)">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgriTrade Hub</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
             <h1>This is header</h1>
+
+
+
+
+<!-- main content -->
+<div th:replace="${content}"></div>
+
+<!-- main content end -->
         </div>
 
     </div>
-
+<script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
